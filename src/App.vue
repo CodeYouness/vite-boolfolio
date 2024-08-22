@@ -19,5 +19,6 @@ export default {
 </template>
 
 <style lang="scss">
+@use "./styles/partials/variable";
   @use "./styles/general.scss";
 </style>

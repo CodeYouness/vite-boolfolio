@@ -16,6 +16,14 @@ export default {
         image: {
             typeof: String,
             required: true
+        },
+        content: {
+            typeof: String,
+            required: true
+        },
+        category: {
+            typeof: String,
+            required: true
         }
     }
 }
@@ -51,4 +59,80 @@ export default {
 
 <style lang="scss" scoped>
 
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+
+    @media(min-width: 768px) {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.project-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-author {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.project-content {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-category {
+    font-weight: bold;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.project-technologies h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-technologies ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-technologies li {
+    font-size: 14px;
+    color: #666;
+}
 </style>
