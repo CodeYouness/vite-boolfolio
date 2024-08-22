@@ -18,6 +18,6 @@ export default {
   <MainFooter/>
 </template>
 
-<style scoped>
+<style lang="scss">
 
 </style>
