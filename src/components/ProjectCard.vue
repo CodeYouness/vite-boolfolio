@@ -33,13 +33,13 @@ export default {
     <div class="project-container">
         <div class="project-card">
             <div class="project-image">
-                <img src="project-image-url.jpg" alt="Project Image">
+                <img src="" alt="Project Image">
             </div>
             <div class="project-details">
-                <h2 class="project-title">Project Title</h2>
-                <h3 class="project-author">Author: John Doe</h3>
+                <h2 class="project-title">{{ title }}</h2>
+                <h3 class="project-author">Author: {{ author }}</h3>
                 <p class="project-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at ligula turpis.
+                    {{ content }}
                 </p>
                 <div class="project-category">
                     <span>Category: Web Development</span>
@@ -63,7 +63,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .project-card {
