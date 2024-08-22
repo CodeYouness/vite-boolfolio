@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-<h1>MainHeader</h1>
+<h1>MainFooter</h1>
 </template>
 
 <style scoped>
