@@ -34,9 +34,7 @@ export default {
 </script>
 
 <template>
-    <ul>
-        <ProjectCard v-for="project in projects" :author="project.author" :image="project.image" :title="project.title" :content="project.content" :category="project.category.name" />
-    </ul>
+<ProjectCard v-for="project in projects" :author="project.author" :image="project.image" :title="project.title" :content="project.content" :category="project.category.name" />
 </template>
 
 <style scoped>

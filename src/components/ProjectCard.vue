@@ -42,7 +42,7 @@ export default {
                     {{ content }}
                 </p>
                 <div class="project-category">
-                    <span>Category: Web Development</span>
+                    <span>Category: {{ category }}</span>
                 </div>
                 <div class="project-technologies">
                     <h4>Technologies Used:</h4>
