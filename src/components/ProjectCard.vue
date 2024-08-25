@@ -24,6 +24,10 @@ export default {
         category: {
             typeof: String,
             required: true
+        },
+        technologies: {
+            typeof: Array,
+            required: true
         }
     }
 }
@@ -47,9 +51,7 @@ export default {
                 <div class="project-technologies">
                     <h4>Technologies Used:</h4>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+                        <li v-for="(technologie, index) in technologies" :key="index">{{technologie.name}}</li>
                     </ul>
                 </div>
             </div>
