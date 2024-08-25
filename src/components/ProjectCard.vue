@@ -33,7 +33,7 @@ export default {
     <div class="project-container">
         <div class="project-card">
             <div class="project-image">
-                <img src="" alt="Project Image">
+                <img :src="image" alt="Project Image" class="w-100">
             </div>
             <div class="project-details">
                 <h2 class="project-title">{{ title }}</h2>
