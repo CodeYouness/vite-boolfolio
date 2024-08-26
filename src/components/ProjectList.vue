@@ -34,7 +34,9 @@ export default {
 </script>
 
 <template>
-<ProjectCard v-for="project in projects" :author="project.author" :image="project.image" :title="project.title" :content="project.content" :category="project.category.name" :technologies="project.tecnologies" />
+    <RouterLink v-for="project in projects" :to="{ name: 'Single-project' , params: {id: project.id }}">
+        <ProjectCard  :author="project.author" :image="project.image" :title="project.title" :content="project.content" :category="project.category.name" :technologies="project.tecnologies" />
+    </RouterLink>
 </template>
 
 <style scoped>
