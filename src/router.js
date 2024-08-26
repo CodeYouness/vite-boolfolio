@@ -20,6 +20,11 @@ const router = createRouter({
             name: 'about',
             component: AppAbout
         },
+        {
+            path: '/about',
+            name: 'about',
+            component: AppAbout
+        }
     ]
 });
 export { router };
