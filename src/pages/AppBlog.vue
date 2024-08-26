@@ -1,6 +1,6 @@
 <script>
 import axios from 'axios';
-import ProjectList from './ProjectList.vue';
+import ProjectList from '../components/ProjectList.vue';
 
 export default {
     data() {
@@ -16,6 +16,7 @@ export default {
 
 <template>
     <h1>Blog</h1>
+    <ProjectList/>
 </template>
 
 <style scoped>
