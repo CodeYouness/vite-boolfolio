@@ -2,24 +2,35 @@
 export default {
     data() {
         return {
+            navLinkNames : [
+                {
+                    label: "Homepage",
+                    name: "home"
+                },
+                {
+                    label: "Projects list",
+                    name: "projects"
+                },
+                {
+                    label: "About Us",
+                    name: "about"
+                },
+            ]
         }
     },
 }
 </script>
 
 <template>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Projects</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse">
-      <div class="navbar-nav">
-        <a class="nav-link" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item" v-for="navItem in navLinkNames">
+            <RouterLink class="nav-link" :to="{name: navItem.name}">{{ navItem.label }}</RouterLink>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
